@@ -1,10 +1,151 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
 }
 
-button{
-    text-decoration: none;
-    cursor: pointer;
+button {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* Margins */
+.marginBot1_5{
+  margin-bottom: 1.5em;
+}
+
+.marginBot1{
+  margin-bottom: 2em;
+}
+.marginBot_5{
+  margin-bottom: .5em;
+}
+
+
+
+/* Colors */
+.lightBlue{
+  color: #748BFF;
+}
+
+.lightBlBg{
+  background: #748BFF;
+}
+
+.whiteText{
+  color: white;
+}
+
+.whiteBg{
+  background-color: white;
+}
+
+.lbBorder{
+ border: 1px solid #748BFF; 
+}
+
+
+/* Navigation */
+.navElements {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.logo{
+    padding-top: 1em;
+    padding-right: 5em;
+}
+
+.navMenu{
+    margin-top: 1em;
+    margin-left: 5em;
+}
+
+/* introduction */
+.introduction {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introContent {
+    max-width: 85%;
+    font-size: 5.5vw;
+}
+
+
+
+.actionBtn{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.landingBtn{
+  
+  padding: 1em 1em;
+  border-radius: 5px;
+}
+
+.imageCrop {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  /*
+    overflow: hidden;
+    border-radius:50%;
+     
+    */
+}
+
+.profilePic {
+   display: inline;
+    margin: 0 auto;
+    width: auto;
+    height: 100%; 
+}
+
+/* About Me */
+.aboutMe{
+  width: 80%;
+  margin-bottom: 3em;
+}
+
+.skillsAndSoft{
+  margin-top: 1em;
+}
+
+/* Projects */
+.projects{
+  width: 80%;
+}
+
+.projItem1{
+  
+}
+
+.projItem2{
+
+}
+
+.projItem3{
+
+}
+
+/* Footer */
+footer{
+  width: 80%;
 }

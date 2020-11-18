@@ -7,10 +7,11 @@
     <meta name="author" content="Vincent Labor">
     <meta name="description"
         content="As a professional Web Developer, I hope to display my work and skills in order to show the potential I have as a Web Developer to keep growing.">
-    <meta name='viewport' content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://kit.fontawesome.com/ffed62ded0.js" crossorigin="anonymous"></script>
     <title>Vincent Labor</title>
 </head>
 
@@ -18,15 +19,27 @@
     <main>
         <!--Landing-->
         <section>
+            <nav class="navElements">
+                <h3 class="logo lightBlue">VL</h3>
+                <div class="menuBtn navMenu">
+                    <i class="fas fa-bars icon-2x"></i>
+                </div>
+
+            </nav>
             <div class="introduction">
-                <nav class="navElements"></nav>
-                <div class="greeting">
-                    <h2>Greetings!</h2>
-                    <h3>My name is Vincent Labor. I am a Web Developer based in San Diego, California.</h3>
-                    <div class="actionBtn">
-                        <button>My Projects</button>
-                        <button>Get in touch</button>
-                    </div>
+                <div class="introContent">
+                    <h3 class="marginBot_5">Greetings!</h2>
+                        <h3>My name is <span class="lightBlue">Vincent Labor</span> </h3>
+                        <p class="marginBot1"> I am a Web Developer based in <br> <span class="lightBlue">San Diego,
+                                California</span>.</p>
+                        <div class="actionBtn marginBot1">
+                            <button class="landingBtn lightBlue whiteBg lbBorder">My Projects</button>
+                            <button class="landingBtn lightBlBg whiteText">Get in touch</button>
+                        </div>
+                        <div class="imageCrop">
+                            <img src="./img/abstractImg.pdf" alt="" class="profilePic">
+                        </div>
+
                 </div>
             </div>
 
@@ -38,7 +51,8 @@
                 <h2>About Me</h2>
                 <p>I am a web developer with a strong passion for building
                     modern web applications. With a background in IT and business,
-                    I am capable of providing a valuable toolset. I am motivated and
+                    I am capable of providing a valuable toolset.</p>
+                <p class="skillsAndSoft"> I am motivated and
                     excited to face any challenge and grow. The technologies that I am
                     comfortable with include Javascript, MongoDB, Html, CSS, Node,
                     React, Redux.</p>
@@ -56,7 +70,8 @@
             <div class="projects">
                 <h2>Projects</h2>
                 <div class="projectItems">
-                    <div class="projItem1">
+                    <div class="projItem1 marginBot1_5">
+                        <h3>Spokenspiel</h3>
                         <p>I am a web developer with a strong passion for building
                             modern web applications. With a background in IT and business,
                             I am capable of providing a valuable toolset. I am motivated and
@@ -64,7 +79,8 @@
                         <button>Live Version</button>
                         <button>Github</button>
                     </div>
-                    <div class="projItem2">
+                    <div class="projItem2 marginBot1_5">
+                        <h3>Pokedexer</h3>
                         <p>I am a web developer with a strong passion for building
                             modern web applications. With a background in IT and business,
                             I am capable of providing a valuable toolset. I am motivated and
@@ -72,7 +88,8 @@
                         <button>Live Version</button>
                         <button>Github</button>
                     </div>
-                    <div class="projItem3">
+                    <div class="projItem3 marginBot1_5">
+                        <h3>Journaler</h3>
                         <p>I am a web developer with a strong passion for building
                             modern web applications. With a background in IT and business,
                             I am capable of providing a valuable toolset. I am motivated and
