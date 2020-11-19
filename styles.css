@@ -11,18 +11,38 @@ button {
   border: none;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Margins */
+
+.marginTop1{
+  margin-top: 1em;
+}
+.marginTop2{
+  margin-top: 2em;
+}
+
+.marginBot1{
+  margin-bottom: 1em;
+}
 .marginBot1_5{
   margin-bottom: 1.5em;
 }
 
-.marginBot1{
+.marginBot2{
   margin-bottom: 2em;
 }
 .marginBot_5{
   margin-bottom: .5em;
 }
 
+/* Padding */
+.padding_5 {
+  padding: 0em .5em;
+}
 
 
 /* Colors */
@@ -45,24 +65,53 @@ button {
 .lbBorder{
  border: 1px solid #748BFF; 
 }
+/* Simple flexbox */
 
+.flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flexCenterColumn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.centerText{
+  text-align: center;
+}
+
+/* Button Width */
+.btnWidth2{
+  width: 7em;
+  height: 5em;
+}
 
 /* Navigation */
 .navElements {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+ 
 }
 
 .logo{
-    padding-top: 1em;
+    
     padding-right: 5em;
 }
 
 .navMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
     margin-top: 1em;
     margin-left: 5em;
 }
@@ -71,39 +120,37 @@ button {
 .introduction {
   max-width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .introContent {
     max-width: 85%;
     font-size: 5.5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
+.selfAliLeft{
+  text-align: left;
+}
 
 .actionBtn{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+
 }
 
 .landingBtn{
-  
-  padding: 1em 1em;
+  margin: .5em ;
+  padding: .5em 1em;
   border-radius: 5px;
+  width: 10em;
 }
 
 .imageCrop {
-  width: 100px;
-  height: 100px;
+  width: 10em;
+  height: 10em;
   overflow: hidden;
   position: relative;
-  max-width: 100%;
   /*
     overflow: hidden;
     border-radius:50%;
@@ -112,7 +159,6 @@ button {
 }
 
 .profilePic {
-   display: inline;
     margin: 0 auto;
     width: auto;
     height: 100%; 
@@ -120,7 +166,7 @@ button {
 
 /* About Me */
 .aboutMe{
-  width: 80%;
+  width: 85%;
   margin-bottom: 3em;
 }
 
@@ -130,7 +176,7 @@ button {
 
 /* Projects */
 .projects{
-  width: 80%;
+  width: 85%;
 }
 
 .projItem1{
@@ -142,6 +188,36 @@ button {
 }
 
 .projItem3{
+
+}
+
+.projImgWrapper {
+ width: 100%;
+  height: 14em;
+  overflow: hidden;
+  position: relative;
+
+  /*
+    overflow: hidden;
+    border-radius:50%;
+     
+    */
+}
+
+.borderProj{
+  border: 1px silver solid;
+}
+
+.projImg{
+ max-width: 100%;
+ box-sizing: border-box;
+
+ max-height: 100%;
+}
+
+.spokenImg{
+  max-width: 100%;
+  box-sizing: border-box;
 
 }
 
