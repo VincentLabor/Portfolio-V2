@@ -13,19 +13,38 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/ffed62ded0.js" crossorigin="anonymous"></script>
     <title>Vincent Labor</title>
+    <script src="./index.js" defer></script>
 </head>
 
-<body>
+<body id="body" class="">
+    <div class="mobileMenu " id="mobileMenu">
+        <div class="mobileNavMenu navWidth flexCenter">
+            <h3 class="logo lightBlue" id="vlLogo">VL</h3>
+            <i class="fas fa-bars icon-4x " id="closeMenu"></i>
+        </div>
+        <ul class="flexCenterColumn mobileMenuItems paddingBot7 ">
+            <li class="marginTB">
+                <a class="mobileMenuItem">Resume</a>
+            </li>
+            <li class="marginTB">
+                <a class="mobileMenuItem" href="#projects" id="sendToProjects">Projects</a>
+            </li>
+            <li class="marginTB">
+                <a class="mobileMenuItem" id="mobileProject" href="https://github.com/VincentLabor"
+                    target="_blank">Github</a>
+            </li>
+        </ul>
+    </div>
     <main>
+
         <!--Landing-->
         <section>
-            <nav class="navElements">
+            <nav class="navElements flexCenter">
                 <h3 class="logo lightBlue">VL</h3>
-                <div class="menuBtn navMenu">
-                    <i class="fas fa-bars icon-2x"></i>
-                </div>
-
+                <i class="fas fa-bars icon-2x biggeres" id="hamburgerMenu"></i>
             </nav>
+
+
             <div class="introduction">
                 <div class="introContent">
                     <h3 class="marginBot_5 marginTop2">Greetings!</h3>
@@ -34,7 +53,9 @@
                             Diego,
                             California</span>.</p>
                     <div class="actionBtn marginBot2 flexCenter">
-                        <button class="landingBtn lightBlue whiteBg lbBorder">My Projects</button>
+                        <button class="landingBtn lightBlue whiteBg lbBorder">
+                            <a href="https://github.com/VincentLabor" target="_blank">My Projects</a>
+                        </button>
                         <button class="landingBtn lightBlBg whiteText">
                             <a href="#projects"><a href="mailto:vlabor95@gmail.com">Get in touch</a></a>
                         </button>
@@ -80,10 +101,12 @@
                                 <img src="./img/spokenspiel.PNG" alt="" class=" spokenImg">
                             </a>
                         </div>
-                        <p class="marginTop1 leftTextAlign">I am a web developer with a strong passion for building
-                            modern web applications. With a background in IT and business,
-                            I am capable of providing a valuable toolset. I am motivated and
-                            excited to face any challenge and grow.</p>
+                        <p class="marginTop1 leftTextAlign">
+                            Spokenspiel is a basic social service that allows 
+                            users to send messages to eachother in real time. 
+                            The purpose of this project was to integrate friends 
+                            list system and chatting system all within MongoDB. 
+                            This project was built with React, Redux, SocketIo, and MongoDB. </p>
                         <div class="projBtn marginTop1 flexCenter marginBot2">
                             <button class="landingBtn lightBlBg whiteText">
                                 <a href="http://spokenspiel.com/" target="_blank">Live Version</a>
@@ -102,10 +125,14 @@
                                 <img src="./img/pokedexer.jpg" alt="" class="projImg">
                             </a>
                         </div>
-                        <p class="marginTop1 leftTextAlign">I am a web developer with a strong passion for building
-                            modern web applications. With a background in IT and business,
-                            I am capable of providing a valuable toolset. I am motivated and
-                            excited to face any challenge and grow.</p>
+                        <p class="marginTop1 leftTextAlign">
+                            Pokedexer is a website where you can look up Pokemon and
+                             see some basic lore and stats available for the specified Pokemon.
+                            The main purpose of this project was to utilize react 
+                            and connect to an API to display data.
+                            The framework of this project consists of React and the PokeAPI.
+                            
+                            </p>
                         <div class="projBtn marginTop1 flexCenter marginBot2">
                             <button class="landingBtn lightBlBg whiteText">
                                 <a href="http://pokedexer.xyz/" target="_blank">Live Version</a>
@@ -122,10 +149,10 @@
                                 <img src="./img/journaler-compressor.jpg" alt="" class="projImg">
                             </a>
                         </div>
-                        <p class="marginTop1 leftTextAlign">I am a web developer with a strong passion for building
-                            modern web applications. With a background in IT and business,
-                            I am capable of providing a valuable toolset. I am motivated and
-                            excited to face any challenge and grow.</p>
+                        <p class="marginTop1 leftTextAlign">
+                            Journaler is a project that was built intended to 
+                            have a user login system that allows users to create
+                             posts on the main page. This project consists of Next.js, EJS, and MongoDB.</p>
                         <div class="projBtn marginTop1 flexCenter marginBot2">
                             <button class="landingBtn lightBlBg whiteText ">
                                 <a href="http://journaler.xyz/" target="_blank">Live Version</a>
@@ -139,9 +166,9 @@
             </div>
         </section>
         <section>
-            <div class="education">
+            <div class="education centerText">
                 <h3 class="eduTitle marginBot1">Education</h3>
-                <div class="SDSU marginBot1_5">
+                <div class="SDSU marginBot1_5 text">
                     <strong>San Diego State University</strong>
                     <p>Bachelor of Science: Business Administration
                         with an emphasis in Management Information Systems
@@ -150,7 +177,7 @@
                 </div>
                 <div class="swc">
                     <strong>Southwestern College</strong>
-                    <p>Associate of Science:  Business Administration</p>
+                    <p>Associate of Science: Business Administration</p>
                     <p>Years: 2013 - 2016</p>
                 </div>
 
@@ -166,7 +193,7 @@
         </section>
         <footer class="topBorder">
             <div class="footerCredits flexCenterColumn paddingVertical ">
-                <h4>Built and designed by Vincent Labor</h4>
+                <h4 class="centerText">Built and designed by Vincent Labor</h4>
             </div>
         </footer>
     </main>
