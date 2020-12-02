@@ -25,11 +25,11 @@ ul {
   list-style-type: none;
 }
 
-.hideOnSmallMedia{
+.hideOnSmallMedia {
   display: none;
 }
 
-.hideOnLargeMedia{
+.hideOnLargeMedia {
   opacity: block;
 }
 
@@ -75,7 +75,7 @@ ul {
     margin: 0em 0em 3em 0em;
   }
 
-  .marginLeft3em{
+  .marginLeft3em {
     padding-left: 3em;
   }
 
@@ -101,7 +101,7 @@ ul {
     padding: 3em 0em;
   }
 
-  .padSides2em{
+  .padSides2em {
     padding: 0 1em;
   }
 
@@ -412,7 +412,6 @@ ul {
   .documentWidth {
     max-width: 80%;
   }
-
 }
 
 /* 50em is around 800px */
@@ -441,20 +440,23 @@ ul {
 
 /* 68em is around 1100px */
 @media screen and (min-width: 68em) {
+  * {
+    line-height: 1.5em;
+  }
 
-  .hideOnSmallMedia{
+  .hideOnSmallMedia {
     display: block;
   }
 
-  .hideOnLargeMedia{
+  .hideOnLargeMedia {
     display: none;
   }
 
-  .navElements.flexCenter{
+  .navElements.flexCenter {
     display: none;
   }
-  
-  .centerFlexOnLargerMediaOnly{
+
+  .centerFlexOnLargerMediaOnly {
     display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox; /* TWEENER - IE 10 */
@@ -465,11 +467,17 @@ ul {
     flex-direction: row;
   }
 
-  .avgFontSize{
+  .gridOnLargerMediaOnly{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .avgFontSize {
     font-size: 18px;
   }
 
-  .marginTop8{
+  .marginTop8 {
     margin-top: 8em;
   }
 
@@ -496,48 +504,63 @@ ul {
 
   /* About Me */
   .aboutMe {
-    width: 70%;
+    width: 80%;
     margin-bottom: 3em;
   }
 
-  .halfWidth{
+  .halfWidth {
     width: 45%;
   }
-  
+
   /* Projects */
   .projects {
-    width: 70%;
+    width: 80%;
+  }
+
+  /* .gridOnLargerMediaOnly{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+  } */
+
+  .projectItemsWrapper {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .projItem {
+    padding: 0em 2em;
+    height: 100%;
+    max-height: 100%;
+    border: solid .5px silver;
+    margin: 0em 1em;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
   }
 
   /* Education */
   .education {
-    width: 70%;
+    width: 80%;
   }
 
   /* Footer */
   .documentWidth {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 
 /* 85em is around 1375px */
 @media screen and (min-width: 85em) {
-
-
-
-
-  .marginTop8{
+  .marginTop8 {
     margin-top: 8em;
   }
 
-  .navElements.flexCenter{
+  .navElements.flexCenter {
     display: none;
   }
 
-
-
-  .projectItems{
-
+  .projectItems {
   }
   /* Introduction */
 
@@ -566,7 +589,6 @@ ul {
     margin-bottom: 3em;
   }
 
-  
   /* Projects */
   .projects {
     width: 70%;
