@@ -25,312 +25,560 @@ ul {
   list-style-type: none;
 }
 
-/* Hide overflow */
-.hideOverflow {
-  overflow: hidden;
+.hideOnSmallMedia{
+  display: none;
 }
 
-/* Margins */
-
-.marginTop1 {
-  margin-top: 1em;
-}
-.marginTop2 {
-  margin-top: 2em;
+.hideOnLargeMedia{
+  opacity: block;
 }
 
-.marginTop4 {
-  margin-top: 4em;
+@media screen and (min-width: 18em) {
+  /* Hide overflow */
+  .hideOverflow {
+    overflow: hidden;
+  }
+
+  /* Margins */
+
+  .marginTop1 {
+    margin-top: 1em;
+  }
+  .marginTop2 {
+    margin-top: 2em;
+  }
+
+  .marginTop4 {
+    margin-top: 4em;
+  }
+
+  .marginBot1 {
+    margin-bottom: 1em;
+  }
+  .marginBot1_5 {
+    margin-bottom: 1.5em;
+  }
+
+  .marginBot2 {
+    margin-bottom: 2em;
+  }
+
+  .marginBot4 {
+    margin-bottom: 4em;
+  }
+
+  .marginBot_5 {
+    margin-bottom: 0.5em;
+  }
+
+  .marginTB {
+    margin: 0em 0em 3em 0em;
+  }
+
+  .marginLeft3em{
+    padding-left: 3em;
+  }
+
+  /* Text align */
+  .centerText {
+    text-align: center;
+  }
+
+  .leftTextAlign {
+    text-align: left;
+  }
+
+  /* Padding */
+  .padding_5 {
+    padding: 0em 0.5em;
+  }
+
+  .paddingBot7 {
+    padding-bottom: 7em;
+  }
+
+  .paddingVertical {
+    padding: 3em 0em;
+  }
+
+  .padSides2em{
+    padding: 0 1em;
+  }
+
+  /* Colors */
+  .lightBlue {
+    color: #748bff;
+  }
+
+  .lightBlBg {
+    background: #748bff;
+  }
+
+  .whiteText {
+    color: white;
+  }
+
+  .whiteBg {
+    background-color: white;
+  }
+
+  .lbBorder {
+    border: 1px solid #748bff;
+  }
+  /* Simple flexbox */
+
+  .flexCenter {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .flexCenterColumn {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* Navigation */
+  .navElements {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.3em;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .navMenu {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.5em;
+    /* margin-left: 5em; */
+    /* width: 100%; */
+  }
+
+  .biggerIcon {
+    font-size: 1.3em;
+  }
+
+  .mobileNavMenu {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .fa-bars:hover {
+    cursor: pointer;
+  }
+
+  .navWidth {
+    max-width: 100%;
+    font-size: 1.3em;
+  }
+
+  .navMenu:hover {
+    cursor: pointer;
+  }
+
+  .absoShow {
+    z-index: 100000000000000;
+  }
+
+  /* This is the mobile menu which is moved out of users viewport. */
+  .mobileMenu {
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  }
+
+  .mobileMenuItems {
+    height: 100%;
+    font-size: 1.5em;
+    max-height: 100%;
+  }
+
+  .mobileMenuItem:hover {
+    cursor: pointer;
+  }
+
+  #mobileMenu.show {
+    transform: translate3d(0vw, 0, 0);
+  }
+
+  /* introduction */
+  .introduction {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .introContent {
+    max-width: 85%;
+    font-size: 5.5vw;
+    height: 100%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .selfAliLeft {
+    text-align: left;
+  }
+
+  .landingBtn {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 8em;
+    max-width: 100%;
+  }
+
+  .imageCrop {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .profilePic {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+  }
+
+  /* About Me */
+  .aboutMe {
+    width: 85%;
+    margin-bottom: 3em;
+  }
+
+  .skillsAndSoft {
+    margin-top: 1em;
+  }
+
+  .iconWrapper {
+    width: 100%;
+    max-width: 100%;
+    max-height: 7em;
+    height: 10em;
+    max-height: 7em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .iconSize {
+    max-width: 5em;
+    box-sizing: border-box;
+    max-height: 5em;
+  }
+
+  /* Projects */
+  .projects {
+    width: 85%;
+  }
+
+  .imgWrapper {
+    width: 100%;
+    height: 14em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .imgSizing {
+    width: 100%;
+    max-width: 25em;
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 30em;
+  }
+
+  .spokenImg {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Contact Me */
+  .documentWidth {
+    max-width: 85%;
+  }
+
+  /* Education */
+  .education {
+    width: 85%;
+  }
+
+  .eduTitle {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    background: whitesmoke;
+  }
+
+  .footerCredits {
+    width: 85%;
+  }
+
+  .topBorder {
+    border-top: 0.5px solid lightgray;
+  }
 }
 
-.marginBot1 {
-  margin-bottom: 1em;
-}
-.marginBot1_5 {
-  margin-bottom: 1.5em;
+/* 37em is around 600px */
+@media screen and (min-width: 37em) {
+  /* Introduction */
+  .imageCrop {
+    width: 6em;
+    height: 5em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fluidText {
+    font-size: 6vw;
+  }
+
+  .smallerFluidText {
+    font-size: 5vw;
+  }
+
+  .iconWrapper {
+    width: 100%;
+    max-width: 100%;
+    max-height: 7em;
+    height: 10em;
+    max-height: 7em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .iconSize {
+    max-width: 6em;
+    box-sizing: border-box;
+    max-height: 6em;
+  }
+
+  .fillpage {
+    height: 100vh;
+  }
+
+  /* About Me */
+  .aboutMe {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+
+  /* Projects */
+  .projects {
+    width: 80%;
+  }
+
+  /* Education */
+  .education {
+    width: 80%;
+  }
+
+  /* Footer */
+  .documentWidth {
+    max-width: 80%;
+  }
+
 }
 
-.marginBot2 {
-  margin-bottom: 2em;
+/* 50em is around 800px */
+@media screen and (min-width: 50em) {
+  /* Introduction */
+
+  .fillpage {
+    height: 100vh;
+  }
+
+  .fluidText {
+    font-size: 5vw;
+  }
+
+  .smallerFluidText {
+    font-size: 4vw;
+  }
+
+  .imageCrop {
+    width: 5em;
+    height: 4em;
+    overflow: hidden;
+    position: relative;
+  }
 }
 
-.marginBot4 {
-  margin-bottom: 4em;
+/* 68em is around 1100px */
+@media screen and (min-width: 68em) {
+
+  .hideOnSmallMedia{
+    display: block;
+  }
+
+  .hideOnLargeMedia{
+    display: none;
+  }
+
+  .navElements.flexCenter{
+    display: none;
+  }
+  
+  .centerFlexOnLargerMediaOnly{
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .avgFontSize{
+    font-size: 18px;
+  }
+
+  .marginTop8{
+    margin-top: 8em;
+  }
+
+  /* Introduction */
+
+  .fillpage {
+    height: 100vh;
+  }
+
+  .fluidText {
+    font-size: 4.5vw;
+  }
+
+  .smallerFluidText {
+    font-size: 3.5vw;
+  }
+
+  .imageCrop {
+    width: 5em;
+    height: 4em;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* About Me */
+  .aboutMe {
+    width: 70%;
+    margin-bottom: 3em;
+  }
+
+  .halfWidth{
+    width: 45%;
+  }
+  
+  /* Projects */
+  .projects {
+    width: 70%;
+  }
+
+  /* Education */
+  .education {
+    width: 70%;
+  }
+
+  /* Footer */
+  .documentWidth {
+    max-width: 70%;
+  }
 }
 
-.marginBot_5 {
-  margin-bottom: 0.5em;
-}
+/* 85em is around 1375px */
+@media screen and (min-width: 85em) {
 
-.marginTB {
-  margin: 0em 0em 3em 0em;
-}
 
-/* Text align */
-.centerText {
-  text-align: center;
-}
 
-.leftTextAlign {
-  text-align: left;
-}
 
-/* Padding */
-.padding_5 {
-  padding: 0em 0.5em;
-}
+  .marginTop8{
+    margin-top: 8em;
+  }
 
-.paddingBot7 {
-  padding-bottom: 7em;
-}
+  .navElements.flexCenter{
+    display: none;
+  }
 
-.paddingVertical {
-  padding: 3em 0em;
-}
 
-/* Colors */
-.lightBlue {
-  color: #748bff;
-}
 
-.lightBlBg {
-  background: #748bff;
-}
+  .projectItems{
 
-.whiteText {
-  color: white;
-}
+  }
+  /* Introduction */
 
-.whiteBg {
-  background-color: white;
-}
+  .fillpage {
+    height: 100vh;
+  }
 
-.lbBorder {
-  border: 1px solid #748bff;
-}
-/* Simple flexbox */
+  .fluidText {
+    font-size: 3vw;
+  }
 
-.flexCenter {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
+  .smallerFluidText {
+    font-size: 2vw;
+  }
 
-.flexCenterColumn {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .imageCrop {
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    position: relative;
+  }
 
-/* Navigation */
-.navElements {
-  width: 100%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  font-size: 1.3em;
-}
+  /* About Me */
+  .aboutMe {
+    width: 70%;
+    margin-bottom: 3em;
+  }
 
-.logo {
-  height: 100%;
-}
+  
+  /* Projects */
+  .projects {
+    width: 70%;
+  }
 
-.logo:hover {
-  cursor: pointer;
-}
+  /* Education */
+  .education {
+    width: 70%;
+  }
 
-.navMenu {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-  font-size: 1.5em;
-  /* margin-left: 5em; */
-  /* width: 100%; */
-}
-
-.biggerIcon {
-  font-size: 1.3em;
-}
-
-.mobileNavMenu {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.fa-bars:hover {
-  cursor: pointer;
-}
-
-.navWidth {
-  max-width: 100%;
-  font-size: 1.3em;
-}
-
-.navMenu:hover {
-  cursor: pointer;
-}
-
-.absoShow {
-  z-index: 100000000000000;
-}
-
-/* This is the mobile menu which is moved out of users viewport. */
-.mobileMenu {
-  background: white;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 200;
-  transform: translate3d(-100vw, 0, 0);
-  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
-}
-
-.mobileMenuItems {
-  height: 100%;
-  font-size: 1.5em;
-  max-height: 100%;
-}
-
-.mobileMenuItem:hover {
-  cursor: pointer;
-}
-
-#mobileMenu.show {
-  transform: translate3d(0vw, 0, 0);
-}
-
-/* introduction */
-.introduction {
-  max-width: 100%;
-  height: 100vh;
-}
-
-.introContent {
-  max-width: 85%;
-  font-size: 5.5vw;
-  height: 100%;
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Chrome */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.selfAliLeft {
-  text-align: left;
-}
-
-.landingBtn {
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  width: 8em;
-  max-width: 100%;
-}
-
-.imageCrop {
-  width: 10em;
-  height: 10em;
-  overflow: hidden;
-  position: relative;
-}
-
-.profilePic {
-  margin: 0 auto;
-  width: auto;
-  height: 100%;
-}
-
-/* About Me */
-.aboutMe {
-  width: 85%;
-  margin-bottom: 3em;
-}
-
-.skillsAndSoft {
-  margin-top: 1em;
-}
-
-.iconWrapper {
-  width: 100%;
-  max-width: 100%;
-  max-height: 7em;
-  height: 10em;
-  max-height: 7em;
-  overflow: hidden;
-  position: relative;
-}
-
-.iconSize {
-  max-width: 5em;
-  box-sizing: border-box;
-  max-height: 5em;
-}
-
-/* Projects */
-.projects {
-  width: 85%;
-}
-
-.imgWrapper {
-  width: 100%;
-  height: 14em;
-  overflow: hidden;
-  position: relative;
-}
-
-.imgSizing {
-  max-width: 100%;
-  box-sizing: border-box;
-  height: 100%;
-  max-height: 100%;
-}
-
-.spokenImg {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Contact Me */
-.documentWidth {
-  max-width: 85%;
-}
-
-/* Education */
-.education {
-  width: 85%;
-}
-
-.eduTitle {
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  width: 100%;
-  background: whitesmoke;
-}
-
-.footerCredits {
-  width: 85%;
-}
-
-.topBorder {
-  border-top: 0.5px solid lightgray;
+  /* Footer */
+  .documentWidth {
+    max-width: 70%;
+  }
 }

@@ -18,7 +18,7 @@
 
 <body id="body" class="">
     <div class="mobileMenu " id="mobileMenu">
-        <div class="mobileNavMenu navWidth flexCenter">
+        <div class="mobileNavMenu navWidth flexCenter ">
             <h3 class="logo lightBlue" id="vlLogo">VL</h3>
             <i class="fas fa-bars icon-4x " id="closeMenu"></i>
         </div>
@@ -39,21 +39,31 @@
 
         <!--Landing-->
         <section>
-            <nav class="navElements flexCenter">
+            <nav class="navElements flexCenter ">
                 <h3 class="logo lightBlue">VL</h3>
-                <i class="fas fa-bars icon-2x biggeres" id="hamburgerMenu"></i>
+                <i class="fas fa-bars icon-2x" id="hamburgerMenu"></i>
+            </nav>
+
+            <nav class="navElements centerFlexOnLargerMediaOnly hideOnSmallMedia ">
+                <h3 class="logo lightBlue">VL</h3>
+                <div class="links hideOnSmallMedia centerFlexOnLargerMediaOnly avgFontSize ">
+                    <p class="padSides2em marginLeft3em"><a href="" target="_blank">Resume</a></p>
+                    <p class="padSides2em"><a href="#projects">Projects</a></p>
+                    <p class="padSides2em"><a href="https://github.com/VincentLabor" target="_blank">Github</a></p>
+                </div>
             </nav>
 
 
-            <div class="introduction">
+
+            <div class="introduction fillpage">
                 <div class="introContent">
-                    <h3 class="marginBot_5 marginTop1">Greetings!</h3>
-                    <h3>My name is <span class="lightBlue">Vincent Labor</span>. </h3>
-                    <p class="marginBot1 centerText"> I am a Web Developer based in <br> <span class="lightBlue">San
+                    <h3 class="marginBot_5 fluidText">Greetings!</h3>
+                    <h3 class="smallerFluidText">My name is <span class="lightBlue">Vincent Labor</span>. </h3>
+                    <p class=" centerText smallerFluidText marginBot1"> I am a Web Developer based in <br> <span class="lightBlue">San
                             Diego,
                             California</span>.</p>
-                    <div class="actionBtn marginBot2 flexCenter">
-                        <button class="landingBtn lightBlue whiteBg lbBorder">
+                    <div class="actionBtn marginBot1 flexCenter ">
+                        <button class="landingBtn lightBlue whiteBg lbBorder ">
                             <a href="https://github.com/VincentLabor" target="_blank">My Projects</a>
                         </button>
                         <button class="landingBtn lightBlBg whiteText">
@@ -63,7 +73,6 @@
                     <div class="imageCrop">
                         <img src="./img/abstractImg_640.png" alt="" class="profilePic">
                     </div>
-
                 </div>
             </div>
 
@@ -71,17 +80,19 @@
 
         <!--About Me-->
         <section>
-            <div class="aboutMe">
-                <h2 class="centerText">About Me</h2>
-                <p>I am a web developer with a strong passion for building
-                    modern web applications. With a background in IT and business,
-                    I am capable of providing a valuable toolset.</p>
-                <p class="skillsAndSoft"> I am motivated and
-                    excited to face any challenge and grow. The technologies that I am
-                    comfortable with include Javascript, MongoDB, Html, CSS, Node,
-                    React, Redux.</p>
+            <div class="aboutMe marginTop8 marginBot4 centerFlexOnLargerMediaOnly">
 
-                <div class="skillIcons">
+                <div class="grouper halfWidth">
+                    <h2 class="centerText lightBlue">About Me</h2>
+                    <p>I am a web developer with a strong passion for building
+                        modern web applications. With a background in IT and business,
+                        I am capable of providing a valuable toolset.</p>
+                    <p class="skillsAndSoft"> I am motivated and
+                        excited to face any challenge and grow. The technologies that I am
+                        comfortable with include Javascript, MongoDB, Html, CSS, Node,
+                        React, Redux.</p>
+                </div>
+                <div class="skillIcons halfWidth">
                     <div class="row1Lang iconWrapper flexCenter marginTop2">
                         <img src="./img/languageImgs/html5.png" alt="HTML" class="iconSize">
                         <img src="./img/languageImgs/svgs/css3.svg" alt="CSS" class="iconSize">
@@ -99,14 +110,14 @@
 
         <!--Projects-->
         <section>
-            <div class="projects centerText marginTop4" id="projects">
-                <h2 class=" marginBot1">Projects</h2>
-                <div class="projectItems">
+            <div class="projects centerText marginTop8 marginBot4" id="projects">
+                <h2 class=" marginBot1 lightBlue">Projects</h2>
+                <div class="projectItems centerFlexOnLargerMediaOnly">
                     <div class="projItem1 marginBot1 borderProj padding_5 flexCenterColumn">
-                        <h3 class="lightBlue marginBot1 marginTop1">Spokenspiel</h3>
+                        <h3 class=" marginBot1 marginTop1">Spokenspiel</h3>
                         <div class="imgWrapper">
                             <a href="http://spokenspiel.com/" target="_blank">
-                                <img src="./img/spokenspiel.PNG" alt="" class=" spokenImg">
+                                <img src="./img/spokenspiel.PNG" alt="" class=" imgSizing">
                             </a>
                         </div>
                         <p class="marginTop1 leftTextAlign">
@@ -127,7 +138,7 @@
                     </div>
 
                     <div class="projItem2 marginBot1 borderProj padding_5 flexCenterColumn">
-                        <h3 class="lightBlue marginBot1 marginTop2">Pokedexer</h3>
+                        <h3 class=" marginBot1 marginTop2">Pokedexer</h3>
                         <div class="imgWrapper">
                             <a href="http://pokedexer.xyz/" target="_blank">
                                 <img src="./img/pokedexer.jpg" alt="" class="imgSizing">
@@ -151,7 +162,7 @@
                         </div>
                     </div>
                     <div class="projItem3 marginBot1 borderProj padding_5 flexCenterColumn">
-                        <h3 class="lightBlue marginBot1 marginTop2">Journaler</h3>
+                        <h3 class=" marginBot1 marginTop2">Journaler</h3>
                         <div class="imgWrapper">
                             <a href="http://journaler.xyz/" target="_blank">
                                 <img src="./img/journaler-compressor.jpg" alt="" class="imgSizing">
@@ -174,8 +185,8 @@
             </div>
         </section>
         <section>
-            <div class="education centerText">
-                <h3 class="eduTitle marginBot1">Education</h3>
+            <div class="education centerText marginTop8">
+                <h3 class="eduTitle marginBot1 lightBlue">Education</h3>
                 <div class="SDSU marginBot1_5 text">
                     <strong>San Diego State University</strong>
                     <p>Bachelor of Science: Business Administration
@@ -192,7 +203,7 @@
             </div>
         </section>
         <section class="marginTop2 flexCenterColumn documentWidth marginBot4">
-            <h3>Contact Me</h3>
+            <h3 class="lightBlue">Contact Me</h3>
             <p class="centerText marginBot1">I am currently open and looking for new
                 opportunites so feel free to
                 get in touch with me</p>
