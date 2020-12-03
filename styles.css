@@ -149,6 +149,27 @@ ul {
     flex-direction: column;
   }
 
+  /* Underline Effect */
+  .underlineEffect {
+    position: relative;
+  }
+
+  .underlineEffect:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #748bff;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .underlineEffect:hover:before {
+    width: 100%;
+  }
+
   /* Navigation */
   .navElements {
     width: 100%;
@@ -274,6 +295,16 @@ ul {
     height: 100%;
   }
 
+  .shadows {
+    transition: box-shadow 0.3s;
+    transition: opacity 0.3s;
+  }
+
+  .shadows:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    opacity: 0.9;
+  }
+
   /* About Me */
   .aboutMe {
     width: 85%;
@@ -333,6 +364,10 @@ ul {
   /* Education */
   .education {
     width: 85%;
+  }
+
+  .biggerFont18 {
+    font-size: 17px;
   }
 
   .eduTitle {
@@ -467,9 +502,9 @@ ul {
     flex-direction: row;
   }
 
-  .gridOnLargerMediaOnly{
+  .gridOnLargerMediaOnly {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
   }
 
@@ -480,6 +515,8 @@ ul {
   .marginTop8 {
     margin-top: 8em;
   }
+
+  /* Nav */
 
   /* Introduction */
 
@@ -533,10 +570,10 @@ ul {
     padding: 0em 2em;
     height: 100%;
     max-height: 100%;
-    border: solid .5px silver;
+    border: solid 0.5px silver;
     margin: 0em 1em;
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 10em 15em 20em 5em;
   }
 
   /* Education */
@@ -592,6 +629,16 @@ ul {
   /* Projects */
   .projects {
     width: 70%;
+  }
+
+  .projItem {
+    padding: 0em 2em;
+    height: 100%;
+    max-height: 100%;
+    border: solid 0.5px silver;
+    margin: 0em 1em;
+    display: grid;
+    grid-template-rows: 10em 15em 15em 5em;
   }
 
   /* Education */

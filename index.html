@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
     <script src="https://kit.fontawesome.com/ffed62ded0.js" crossorigin="anonymous"></script>
     <title>Vincent Labor</title>
     <script src="./index.js" defer></script>
@@ -23,13 +27,13 @@
             <i class="fas fa-bars icon-4x " id="closeMenu"></i>
         </div>
         <ul class="flexCenterColumn mobileMenuItems paddingBot7 ">
-            <li class="marginTB">
+            <li class="marginTB underlineEffect">
                 <a class="mobileMenuItem">Resume</a>
             </li>
-            <li class="marginTB">
+            <li class="marginTB underlineEffect">
                 <a class="mobileMenuItem" href="#projects" id="sendToProjects">Projects</a>
             </li>
-            <li class="marginTB">
+            <li class="marginTB underlineEffect">
                 <a class="mobileMenuItem" id="mobileProject" href="https://github.com/VincentLabor"
                     target="_blank">Github</a>
             </li>
@@ -45,11 +49,13 @@
             </nav>
 
             <nav class="navElements centerFlexOnLargerMediaOnly hideOnSmallMedia ">
-                <h3 class="logo lightBlue">VL</h3>
+                <h3 class="logo lightBlue ">VL</h3>
                 <div class="links hideOnSmallMedia centerFlexOnLargerMediaOnly avgFontSize ">
-                    <p class="padSides2em marginLeft3em"><a href="" target="_blank">Resume</a></p>
-                    <p class="padSides2em"><a href="#projects">Projects</a></p>
-                    <p class="padSides2em"><a href="https://github.com/VincentLabor" target="_blank">Github</a></p>
+                    <p class="padSides2em marginLeft3em"><a href="" target="_blank" class="underlineEffect">Resume</a>
+                    </p>
+                    <p class="padSides2em"><a href="#projects" class="underlineEffect">Projects</a></p>
+                    <p class="padSides2em"><a href="https://github.com/VincentLabor" target="_blank"
+                            class="underlineEffect">Github</a></p>
                 </div>
             </nav>
 
@@ -59,14 +65,15 @@
                 <div class="introContent">
                     <h3 class="marginBot_5 fluidText">Greetings!</h3>
                     <h3 class="smallerFluidText">My name is <span class="lightBlue">Vincent Labor</span>. </h3>
-                    <p class=" centerText smallerFluidText marginBot1"> I am a Web Developer based in <br> <span class="lightBlue">San
+                    <p class=" centerText smallerFluidText marginBot1"> I am a Web Developer based in <br> <span
+                            class="lightBlue">San
                             Diego,
                             California</span>.</p>
                     <div class="actionBtn marginBot1 flexCenter ">
-                        <button class="landingBtn lightBlue whiteBg lbBorder ">
-                            <a href="https://github.com/VincentLabor" target="_blank">My Projects</a>
+                        <button class="landingBtn lightBlue whiteBg lbBorder shadows">
+                            <a href="https://github.com/VincentLabor" target="_blank" >My Projects</a>
                         </button>
-                        <button class="landingBtn lightBlBg whiteText">
+                        <button class="landingBtn lightBlBg whiteText shadows">
                             <a href="#projects"><a href="mailto:vlabor95@gmail.com">Get in touch</a></a>
                         </button>
                     </div>
@@ -83,7 +90,7 @@
             <div class="aboutMe marginTop8 marginBot4 centerFlexOnLargerMediaOnly">
 
                 <div class="grouper halfWidth">
-                    <h2 class="centerText lightBlue">About Me</h2>
+                    <h2 class="centerText lightBlue marginBot1">About Me</h2>
                     <p>I am a web developer with a strong passion for building
                         modern web applications. With a background in IT and business,
                         I am capable of providing a valuable toolset.</p>
@@ -126,11 +133,11 @@
                             The purpose of this project was to integrate friends
                             list system and chatting system all within MongoDB.
                             This project was built with React, Redux, SocketIo, and MongoDB. </p>
-                        <div class="projBtn marginTop1 flexCenter marginBot2">
-                            <button class="landingBtn lightBlBg whiteText">
+                        <div class="projBtn marginTop1 flexCenter marginBot2 ">
+                            <button class="landingBtn lightBlBg whiteText shadows">
                                 <a href="http://spokenspiel.com/" target="_blank">Live Version</a>
                             </button>
-                            <button class="landingBtn lightBlBg whiteText">
+                            <button class="landingBtn lightBlBg whiteText shadows">
                                 <a href="https://github.com/VincentLabor/Spokenspiel" target="_blank">Github</a>
                             </button>
                         </div>
@@ -153,10 +160,10 @@
 
                         </p>
                         <div class="projBtn marginTop1 flexCenter marginBot2">
-                            <button class="landingBtn lightBlBg whiteText">
+                            <button class="landingBtn lightBlBg whiteText shadows">
                                 <a href="http://pokedexer.xyz/" target="_blank">Live Version</a>
                             </button>
-                            <button class="landingBtn lightBlBg whiteText">
+                            <button class="landingBtn lightBlBg whiteText shadows">
                                 <a href="https://github.com/VincentLabor/pokedexer" target="_blank">Github</a>
                             </button>
                         </div>
@@ -173,10 +180,10 @@
                             have a user login system that allows users to create
                             posts on the main page. This project consists of Next.js, EJS, and MongoDB.</p>
                         <div class="projBtn marginTop1 flexCenter marginBot2">
-                            <button class="landingBtn lightBlBg whiteText ">
+                            <button class="landingBtn lightBlBg whiteText shadows">
                                 <a href="http://journaler.xyz/" target="_blank">Live Version</a>
                             </button>
-                            <button class="landingBtn lightBlBg whiteText marginBot2">
+                            <button class="landingBtn lightBlBg whiteText marginBot2 shadows">
                                 <a href="https://github.com/VincentLabor/Journaler" target="_blank">Github</a>
                             </button>
                         </div>
@@ -186,16 +193,16 @@
         </section>
         <section>
             <div class="education centerText marginTop8">
-                <h3 class="eduTitle marginBot1 lightBlue">Education</h3>
+                <h2 class="eduTitle marginBot1 lightBlue">Education</h2>
                 <div class="SDSU marginBot1_5 text">
-                    <strong>San Diego State University</strong>
+                    <h3>San Diego State University</h3>
                     <p>Bachelor of Science: Business Administration
                         with an emphasis in Management Information Systems
                     </p>
                     <p>Years: 2016 - 2018</p>
                 </div>
                 <div class="swc">
-                    <strong>Southwestern College</strong>
+                    <h3>Southwestern College</h3>
                     <p>Associate of Science: Business Administration</p>
                     <p>Years: 2013 - 2016</p>
                 </div>
@@ -203,11 +210,11 @@
             </div>
         </section>
         <section class="marginTop2 flexCenterColumn documentWidth marginBot4">
-            <h3 class="lightBlue">Contact Me</h3>
+            <h2 class="lightBlue ">Contact Me</h2>
             <p class="centerText marginBot1">I am currently open and looking for new
                 opportunites so feel free to
                 get in touch with me</p>
-            <button class="landingBtn lightBlBg whiteText "><a href="mailto:vlabor95@gmail.com">Get in
+            <button class="landingBtn lightBlBg whiteText shadows"><a href="mailto:vlabor95@gmail.com">Get in
                     touch</a></button>
         </section>
         <footer class="topBorder">
